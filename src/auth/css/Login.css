@@ -1,0 +1,42 @@
+.Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1140px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 15px;
+}
+
+.btn-sign-in {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    margin: 15px;
+    outline: none;
+    background: forestgreen;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.msg {
+    color: red;
+    font-size: 18px;
+    margin: 0;
+}
