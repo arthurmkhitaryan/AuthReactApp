@@ -7,7 +7,7 @@ function Profile() {
 
     return (
         <div className="Profile">
-            <h1>Welcome {location.state.name}</h1>
+            {/*<h1>Welcome {location.state.name}</h1>*/}
         </div>
     );
 }

@@ -1,25 +1,14 @@
 import './App.css';
+import 'antd/dist/antd.css';
 import { Route } from "react-router-dom";
-import Nav from "./Nav";
-import Login from "./auth/Login";
-import Register from "./auth/Register";
-import Profile from "./profile/Profile";
-import UserNav from "./profile/UserNav";
+import Login from "./views/auth/Login";
+import Register from "./views/auth/Register";
+import Profile from "./views/profile/Profile";
 
 function App() {
 
-    function isLogin() {
-        const loggedUser = localStorage.getItem("loggedUser");
-        if (loggedUser !== null) {
-            return <UserNav />
-        }else {
-            return <Nav />
-        }
-    }
-
     return (
         <div className="App">
-            {isLogin()}
             <div className="app-wrapper">
                 <Route path="/login" component={Login}/>
                 <Route path="/register" component={Register}/>

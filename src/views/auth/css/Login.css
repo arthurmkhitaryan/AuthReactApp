@@ -1,18 +1,20 @@
 .Login {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     max-width: 1140px;
     width: 100%;
-    margin: 50px auto;
+    margin: 5% auto;
 }
 
-label {
-    font-size: 18px;
+ul {
+    margin-top: 10px;
+}
+
+.sign-in {
+    font-size: 30px;
     font-weight: bold;
-    display: block;
-    margin: 15px;
 }
 
 .btn-sign-in {
@@ -35,8 +37,9 @@ label {
     text-decoration: underline;
 }
 
-.msg {
+.err {
     color: red;
     font-size: 18px;
     margin: 0;
+    text-transform: capitalize;
 }
